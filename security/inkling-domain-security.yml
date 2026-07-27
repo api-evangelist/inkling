@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.inkling.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 22 23:59:59 2026 GMT
+  hsts: false
+domains:
+- domain: inkling.com
+  dnssec: false
+  caa:
+  - 0 issuewild "digicert.com"
+  - 0 issuewild "globalsign.com"
+  - 0 issuewild "letsencrypt.org"
+  - 0 issue "digicert.com"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

@@ -1,8 +1,26 @@
 aid: inkling
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/inkling.png
 name: Inkling
-description: 'Inkling is a company surfaced as a portfolio company of sapphire-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: hr-tech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Inkling is a frontline employee training and enablement platform (now part of Echo360)
+  that delivers mission-critical knowledge, learning pathways, and operational workflows to essential
+  workers across retail, hospitality, healthcare, and manufacturing. Its products include the Habitat
+  content authoring tool, mobile Knowledge & Training modules, InkForms operational checklists,
+  certification pathways, reporting and analytics, and LMS/LXP integrations. Inkling publishes no public
+  developer API, OpenAPI specification, SDK, or developer portal; integration is delivered through LMS/LXP
+  connectors and professional services. This API Evangelist profile was surfaced as a Sapphire Ventures
+  portfolio company and enriched with the provider''s public identity, security posture, and site
+  properties.'
 url: https://raw.githubusercontent.com/api-evangelist/inkling/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Hr Tech
+- Learning
+- Training
+- Employee Enablement
+- Content Authoring
+- LMS
+- Frontline Workers
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/inkling-domain-security.yml
 - type: Website
   url: https://www.inkling.com/
+- type: Blog
+  url: https://www.inkling.com/blog/
+- type: Support
+  url: https://support.inkling.com/hc/en-us
+- type: Pricing
+  url: https://www.inkling.com/pricing-plans/
+- type: Login
+  url: https://www.inkling.com/login/
+- type: TermsOfService
+  url: https://www.inkling.com/terms/
+- type: PrivacyPolicy
+  url: https://www.inkling.com/privacy/
+- type: Security
+  url: https://www.inkling.com/information-security/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
